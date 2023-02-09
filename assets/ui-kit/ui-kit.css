@@ -1,0 +1,129 @@
+:root {
+  --button-background-color: rgb(241, 205, 179);
+  --button-hover-color: rgb(253, 220, 196);
+  --button-secondary-color: rgb(255, 255, 255);
+  --button-disabled-border-color: rgb(205, 205, 205);
+  --text-color: rgb(41, 41, 41);
+}
+
+.shelter-button--primary {
+  padding: 15px 45px;
+  background: var(--button-background-color);
+  border-radius: 100px;
+  border: var(--button-background-color);
+  cursor: pointer;
+
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--text-color);
+}
+
+.shelter-button--primary:hover {
+  background: var(--button-hover-color);
+}
+
+.shelter-button--secondary {
+  padding: 15px 45px;
+  border: 2px solid var(--button-background-color);
+  background: var(--button-secondary-color);
+  border-radius: 100px;
+  cursor: pointer;
+
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--text-color);
+}
+
+.shelter-button--secondary:hover {
+  background: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+.shelter-button--arrow {
+  padding: 23px 19px;
+  border: 2px solid var(--button-background-color);
+  border-radius: 100px;
+  background: var(--button-secondary-color);
+}
+
+.shelter-button--arrow:hover {
+  background: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+.shelter-button--arrow-inactive {
+  padding: 23px 19px;
+  border: 2px solid var(--button-disabled-border-color);
+  border-radius: 100px;
+  background: var(--button-secondary-color);
+}
+
+.shelter-button--paginator {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--button-background-color);
+  border-radius: 100px;
+  background: var(--button-secondary-color);
+
+  font-family: 'Georgia';
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
+.shelter-button--paginator:hover {
+  background: var(--button-hover-color);
+  border-radius: 100px;
+  border: 2px solid var(--button-hover-color);
+}
+
+.shelter-button--paginator-inactive {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--button-disabled-border-color);
+  border-radius: 100px;
+
+  font-family: 'Georgia';
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
+.shelter-button--paginator-active {
+  width: 52px;
+  height: 52px;
+  background: var(--button-background-color);
+  border-radius: 100px;
+  border: var(--button-background-color);
+
+  font-family: 'Georgia';
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
+.shelter-close-button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--button-background-color);
+  border-radius: 100px;
+  background: var(--button-secondary-color);
+
+  font-family: 'Georgia';
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+
+.shelter-close-button:hover {
+  background: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
