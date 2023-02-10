@@ -4,6 +4,11 @@
   --button-secondary-color: rgb(255, 255, 255);
   --button-disabled-border-color: rgb(205, 205, 205);
   --text-color: rgb(41, 41, 41);
+  --header-color: rgb(84, 84, 84);
+  --paragraph-l-color: rgb(76, 76, 76);
+  --paragraph-s-color: rgb(178, 178, 178);
+
+
 }
 
 .shelter-button--primary {
@@ -47,6 +52,7 @@
   padding: 23px 19px;
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
+  cursor: pointer;
   background: var(--button-secondary-color);
 }
 
@@ -67,6 +73,7 @@
   height: 52px;
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
+  cursor: pointer;
   background: var(--button-secondary-color);
 
   font-family: 'Georgia';
@@ -114,6 +121,7 @@
   height: 52px;
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
+  cursor: pointer;
   background: var(--button-secondary-color);
 
   font-family: 'Georgia';
@@ -126,4 +134,49 @@
 .shelter-close-button:hover {
   background: var(--button-hover-color);
   border: 2px solid var(--button-hover-color);
+}
+
+.header-general {
+  font-family: 'Georgia';
+  font-weight: 400;
+  color: var(--header-color);
+
+}
+
+.shelter-header-two {
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.shelter-header-three {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.shelter-header-four {
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+}
+
+.shelter-header-five {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.shelter-paragraph-l {
+font-family: 'Arial';
+font-size: 15px;
+line-height: 160%;
+color: var(--paragraph-l-color);
+}
+
+.shelter-paragraph-s {
+font-family: 'Arial';
+font-style: italic;
+font-size: 12px;
+line-height: 150%;
+color: var(--paragraph-s-color);
 }
