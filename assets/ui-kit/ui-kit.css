@@ -170,7 +170,10 @@
   border: 2px solid var(--button-hover-color);
 }
 
-.header-general {
+.shelter-header-two,
+.shelter-header-three,
+.shelter-header-four,
+.shelter-header-five {
   font-family: 'Georgia';
   font-weight: 400;
   color: var(--header-color);
@@ -214,7 +217,8 @@
   color: var(--paragraph-s-color);
 }
 
-.link-general {
+.shelter-link-dark-bg,
+.shelter-link-light-bg {
   font-family: 'Arial';
   font-style: normal;
   font-size: 15px;
