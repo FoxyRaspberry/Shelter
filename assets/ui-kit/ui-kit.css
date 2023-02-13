@@ -1,4 +1,5 @@
 :root {
+  --button-height: 52px;
   --button-background-color: rgb(241, 205, 179);
   --button-hover-color: rgb(253, 220, 196);
   --button-secondary-color: rgb(255, 255, 255);
@@ -12,6 +13,7 @@
 
 .shelter-button--primary {
   padding: 15px 45px;
+  height: var(--button-height);
   background: var(--button-background-color);
   border-radius: 100px;
   border: var(--button-background-color);
@@ -31,6 +33,7 @@
 .shelter-button--secondary {
   padding: 15px 45px;
   border: 2px solid var(--button-background-color);
+  height: var(--button-height);
   background: var(--button-secondary-color);
   border-radius: 100px;
   cursor: pointer;
@@ -48,7 +51,7 @@
 }
 
 .shelter-button--arrow {
-  padding: 23px 19px;
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-background-color);
@@ -63,7 +66,7 @@
 }
 
 .shelter-button--arrow-inactive {
-  padding: 23px 19px;
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-disabled-border-color);
@@ -72,7 +75,7 @@
 }
 
 .shelter-button--arrow-reversed {
-  padding: 23px 19px;
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-background-color);
@@ -87,7 +90,7 @@
 }
 
 .shelter-button--arrow-inactive-reversed {
-  padding: 23px 19px;
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-disabled-border-color);
@@ -96,6 +99,7 @@
 }
 
 .shelter-button--paginator {
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-background-color);
@@ -117,6 +121,7 @@
 }
 
 .shelter-button--paginator-inactive {
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-disabled-border-color);
@@ -130,6 +135,7 @@
 }
 
 .shelter-button--paginator-active {
+  padding: 0;
   width: 52px;
   height: 52px;
   background: var(--button-background-color);
@@ -144,6 +150,7 @@
 }
 
 .shelter-close-button {
+  padding: 0;
   width: 52px;
   height: 52px;
   border: 2px solid var(--button-background-color);
