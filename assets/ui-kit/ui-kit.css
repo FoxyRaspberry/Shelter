@@ -54,11 +54,11 @@
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
   cursor: pointer;
-  background: var(--button-secondary-color);
+  background: url("images/arrow.svg") no-repeat center var(--button-secondary-color);
 }
 
 .shelter-button--arrow:hover {
-  background: var(--button-hover-color);
+  background-color: var(--button-hover-color);
   border: 2px solid var(--button-hover-color);
 }
 
@@ -68,7 +68,31 @@
   height: 52px;
   border: 2px solid var(--button-disabled-border-color);
   border-radius: 100px;
-  background: var(--button-secondary-color);
+  background: url("images/arrow_disabled.svg") no-repeat center var(--button-secondary-color);
+}
+
+.shelter-button--arrow-reversed {
+  padding: 23px 19px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--button-background-color);
+  border-radius: 100px;
+  cursor: pointer;
+  background: url("images/arrow_reversed.svg") no-repeat center var(--button-secondary-color);
+}
+
+.shelter-button--arrow-reversed:hover {
+  background-color: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+.shelter-button--arrow-inactive-reversed {
+  padding: 23px 19px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--button-disabled-border-color);
+  border-radius: 100px;
+  background: url("images/arrow_reversed_disabled.svg") no-repeat center var(--button-secondary-color);
 }
 
 .shelter-button--paginator {
@@ -102,7 +126,7 @@
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: var(--text-color);
+  color: var(--button-disabled-border-color);
 }
 
 .shelter-button--paginator-active {
