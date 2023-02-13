@@ -7,8 +7,7 @@
   --header-color: rgb(84, 84, 84);
   --paragraph-l-color: rgb(76, 76, 76);
   --paragraph-s-color: rgb(178, 178, 178);
-
-
+  --active-link-color: rgb(250, 250, 250);
 }
 
 .shelter-button--primary {
@@ -50,6 +49,8 @@
 
 .shelter-button--arrow {
   padding: 23px 19px;
+  width: 52px;
+  height: 52px;
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
   cursor: pointer;
@@ -63,6 +64,8 @@
 
 .shelter-button--arrow-inactive {
   padding: 23px 19px;
+  width: 52px;
+  height: 52px;
   border: 2px solid var(--button-disabled-border-color);
   border-radius: 100px;
   background: var(--button-secondary-color);
@@ -140,7 +143,6 @@
   font-family: 'Georgia';
   font-weight: 400;
   color: var(--header-color);
-
 }
 
 .shelter-header-two {
@@ -155,9 +157,9 @@
 }
 
 .shelter-header-four {
-font-size: 20px;
-line-height: 115%;
-letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
 }
 
 .shelter-header-five {
@@ -167,16 +169,52 @@ letter-spacing: 0.06em;
 }
 
 .shelter-paragraph-l {
-font-family: 'Arial';
-font-size: 15px;
-line-height: 160%;
-color: var(--paragraph-l-color);
+  font-family: 'Arial';
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--paragraph-l-color);
 }
 
 .shelter-paragraph-s {
-font-family: 'Arial';
-font-style: italic;
-font-size: 12px;
-line-height: 150%;
-color: var(--paragraph-s-color);
+  font-family: 'Arial';
+  font-style: italic;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--paragraph-s-color);
+}
+
+.link-general {
+  font-family: 'Arial';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.shelter-link-dark-bg {
+  color: var(--button-disabled-border-color);
+  text-decoration: none;
+  background-color: rgb(42, 38, 36);
+}
+
+.shelter-link-dark-bg:active {
+  color: var(--active-link-color);
+  border-bottom: 3px solid var(--button-background-color);
+}
+
+.shelter-link-dark-bg:hover {
+  color: var(--active-link-color);
+}
+
+.shelter-link-light-bg {
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+.shelter-link-light-bg:active {
+  color: var(--header-color);
+  border-bottom: 3px solid var(--button-background-color);
+}
+
+.shelter-link-light-bg:hover {
+  color: var(--text-color);
 }
