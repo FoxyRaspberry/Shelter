@@ -228,7 +228,6 @@
 .shelter-link-dark-bg {
   color: var(--button-disabled-border-color);
   text-decoration: none;
-  background-color: rgb(42, 38, 36);
 }
 
 .shelter-link-dark-bg:active {
