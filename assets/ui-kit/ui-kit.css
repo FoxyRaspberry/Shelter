@@ -25,6 +25,7 @@
   font-weight: 400;
   font-size: 17px;
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .shelter-button--primary:hover {
