@@ -226,6 +226,10 @@
   margin: 0;
 }
 
+.donation__card-number-link {
+  text-decoration: none;
+}
+
 .donation__legal-information {
   margin: 0;
   font-family: 'Arimo';
