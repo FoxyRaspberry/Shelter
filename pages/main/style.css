@@ -5,16 +5,13 @@
 
 .cover__section {
   background-image: url('images/noise_transparent@2x.svg'), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%, rgb(33, 31, 32));
+  padding-top: 60px;
 }
 
 .header__section {
   display: flex;
   justify-content: space-between;
-}
-
-.header__logo-container {
-  margin-top: 60px;
-  margin-left: 40px;
+  align-items: center;
 }
 
 .header__logo-title {
@@ -36,17 +33,13 @@
   color: var(--button-secondary-color);
 }
 
-.header__links-container {
-
-}
-
 .header__links-list {
   list-style-type: none;
   display: flex;
   align-items: center;
   padding: 0px;
   gap: 35px;
-  margin: 76px 40px 0 0;
+  margin: 0;
 }
 
 .slogan__content-section {
@@ -59,18 +52,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 40px;
-  padding-top: 115px;
+  gap: 42px;
+  padding-top: 163px;
 }
 
 .slogan__header-color {
   color: var(--button-secondary-color);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .slogan__paragraph-color {
   color: var(--button-disabled-border-color);
-  margin: 42px 0 42px 0;
+  margin: 0;
 }
 
 .cozy-house-story__section {
@@ -141,8 +134,12 @@
 }
 
 .pets__animal-name {
-  text-align: center;
   padding: 30px 0;
+  font-family: 'Gelasio';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .pets__button-card {
