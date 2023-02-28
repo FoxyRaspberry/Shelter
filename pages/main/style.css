@@ -221,6 +221,7 @@
 }
 
 .donation__text-container {
+  width: 380px;
   display: flex;
   flex-direction: column;
   gap: 20px;
