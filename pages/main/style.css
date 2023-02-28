@@ -78,7 +78,12 @@
   align-items: center;
 }
 
+.cozy-house-story__pets-image {
+  display: block;
+}
+
 .cozy-house-story__text-container {
+  width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
