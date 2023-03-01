@@ -1,0 +1,295 @@
+.wrapper__section {
+  width: 1200px;
+  margin: auto;
+}
+
+.cover__section {
+  background-image: url('images/noise_transparent@2x.svg'), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%, rgb(33, 31, 32));
+  padding-top: 60px;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-title {
+  margin: 0;
+  font-family: 'Gelasio';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: var(--button-background-color);
+}
+
+.header__logo-subtitle {
+  margin-top: 10px;
+  padding-left: 4px;
+  font-family: 'Arimo';
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--button-secondary-color);
+}
+
+.header__links-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+  margin: 0;
+}
+
+.slogan__content-section {
+  height: 728px;
+  margin-top: 60px;
+  background: url(images/start_screen_puppy.svg) right bottom no-repeat;
+}
+
+.slogan__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+  padding-top: 163px;
+}
+
+.slogan__header-color {
+  color: var(--button-secondary-color);
+  margin: 0;
+}
+
+.slogan__paragraph-color {
+  color: var(--button-disabled-border-color);
+  margin: 0;
+}
+
+.cozy-house-story__section {
+  background: var(--button-secondary-color);
+  padding: 80px 0 100px;
+}
+
+.cozy-house-story__content-section {
+  padding: 0 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cozy-house-story__pets-image {
+  display: block;
+}
+
+.cozy-house-story__text-container {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cozy-house-story__margin {
+  margin: 0;
+}
+
+.pets__section {
+  background: var(--background-section);
+  padding: 80px 0 100px;
+}
+
+.pets__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.pets__header {
+  margin: 0;
+  text-align: center;
+}
+
+.pets__slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pets__animal-container {
+  display: flex;
+  gap: 90px;
+}
+
+.pets__animal-card {
+  width: 270px;
+  height: 435px;
+  background: var(--active-link-color);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.pets__animal-card:hover {
+  background: var(--button-secondary-color);
+}
+
+.pets__animal-photo {
+  display: block;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.pets__animal-name {
+  padding: 30px 0;
+  font-family: 'Gelasio';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.pets__button-card {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.pets__animal-card:hover .pets__button-card {
+  background: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+.pets__button-primary {
+  margin: auto;
+}
+
+.help__section {
+  background: var(--button-secondary-color);
+  padding: 80px 0 100px;
+}
+
+.help__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.help__header {
+  margin: 0;
+  text-align: center;
+}
+
+.help__icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 55px 120px;
+}
+
+.help__icon-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.help__icon-image {
+  width: 60px;
+}
+
+.help__icon-name {
+  margin: 0;
+}
+
+.donation__section {
+  background: var(--background-section);
+  padding: 80px 0 100px;
+}
+
+.donation__content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.donation__image,
+.donation__card-number {
+  display: block;
+}
+
+.donation__text-container {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.donation__header {
+  margin: 0;
+}
+
+.donation__card-number-link {
+  text-decoration: none;
+}
+
+.donation__legal-information {
+  margin: 0;
+  font-family: 'Arimo';
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--paragraph-s-color);
+}
+
+.footer__section {
+  padding-top: 40px;
+  background-image: url('images/noise_transparent@2x.svg'), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%, rgb(33, 31, 32));
+}
+
+.footer__content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+}
+
+.footer__contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.footer__header {
+  margin: 0;
+  color: var(--button-secondary-color);
+}
+
+.footer__mail-container,
+.footer__phone-container,
+.footer__boston-container,
+.footer__london-container {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.footer__mail-image,
+.footer__puppy-image {
+  display: block;
+}
+
+.footer__contact-text {
+  margin: 0;
+  align-self: center;
+  color: var(--button-background-color);
+}
+
+.footer__location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-top: 16px;
+}

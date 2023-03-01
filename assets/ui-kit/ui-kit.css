@@ -1,14 +1,15 @@
 :root {
   --button-height: 52px;
-  --button-background-color: rgb(241, 205, 179);
-  --button-hover-color: rgb(253, 220, 196);
-  --button-secondary-color: rgb(255, 255, 255);
-  --button-disabled-border-color: rgb(205, 205, 205);
-  --text-color: rgb(41, 41, 41);
-  --header-color: rgb(84, 84, 84);
-  --paragraph-l-color: rgb(76, 76, 76);
-  --paragraph-s-color: rgb(178, 178, 178);
-  --active-link-color: rgb(250, 250, 250);
+  --button-background-color: #f1cdb3;
+  --button-hover-color: #fddcc4;
+  --button-secondary-color: #ffffff;
+  --button-disabled-border-color: #cdcdcd;
+  --text-color: #292929;
+  --header-color: #545454;
+  --paragraph-l-color: #4c4c4c;
+  --paragraph-s-color: #b2b2b2;
+  --active-link-color: #fafafa;
+  --background-section: #f6f6f6;
 }
 
 .shelter-button--primary {
@@ -19,11 +20,13 @@
   border: var(--button-background-color);
   cursor: pointer;
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   color: var(--text-color);
+  letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 .shelter-button--primary:hover {
@@ -38,11 +41,12 @@
   border-radius: 100px;
   cursor: pointer;
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   color: var(--text-color);
+  letter-spacing: 0.06em;
 }
 
 .shelter-button--secondary:hover {
@@ -107,11 +111,12 @@
   cursor: pointer;
   background: var(--button-secondary-color);
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  letter-spacing: 0.06em;
 }
 
 .shelter-button--paginator:hover {
@@ -127,7 +132,7 @@
   border: 2px solid var(--button-disabled-border-color);
   border-radius: 100px;
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -142,7 +147,7 @@
   border-radius: 100px;
   border: var(--button-background-color);
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -158,7 +163,7 @@
   cursor: pointer;
   background: var(--button-secondary-color);
 
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -174,7 +179,7 @@
 .shelter-header-three,
 .shelter-header-four,
 .shelter-header-five {
-  font-family: 'Georgia';
+  font-family: 'Gelasio';
   font-weight: 400;
   color: var(--header-color);
 }
@@ -203,14 +208,14 @@
 }
 
 .shelter-paragraph-l {
-  font-family: 'Arial';
+  font-family: 'Arimo';
   font-size: 15px;
   line-height: 160%;
   color: var(--paragraph-l-color);
 }
 
 .shelter-paragraph-s {
-  font-family: 'Arial';
+  font-family: 'Arimo';
   font-style: italic;
   font-size: 12px;
   line-height: 150%;
@@ -219,7 +224,7 @@
 
 .shelter-link-dark-bg,
 .shelter-link-light-bg {
-  font-family: 'Arial';
+  font-family: 'Arimo';
   font-style: normal;
   font-size: 15px;
   line-height: 160%;
@@ -228,7 +233,6 @@
 .shelter-link-dark-bg {
   color: var(--button-disabled-border-color);
   text-decoration: none;
-  background-color: rgb(42, 38, 36);
 }
 
 .shelter-link-dark-bg:active {
