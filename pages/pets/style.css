@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+.header__link-logo {
+  text-decoration: none;
+}
+
 .header__logo-title {
   margin: 0;
   font-family: 'Gelasio';
@@ -41,4 +45,84 @@
   padding: 0px;
   gap: 35px;
   margin: 0;
+}
+
+.friends__section {
+  background: var(--background-section);
+  padding: 80px 0 100px;
+}
+
+.friends__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.friends__header {
+  margin: 0;
+  text-align: center;
+}
+
+.friends__animal-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 40px;
+  padding: 15px 0;
+}
+
+.friends__animal-card {
+  width: 270px;
+  height: 435px;
+  background: var(--active-link-color);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.friends__animal-photo {
+  display: block;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.friends__animal-name {
+  padding: 30px 0;
+  font-family: 'Gelasio';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+}
+
+.friends__button-card {
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.friends__animal-card:hover .friends__button-card {
+  background: var(--button-hover-color);
+  border: 2px solid var(--button-hover-color);
+}
+
+.friends__buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.friends__button--double-back {
+  background: url("image/buttons_icon/button_double-back.svg") no-repeat center;
+}
+
+.friends__button--back {
+  background: url("image/buttons_icon/button_back.svg") no-repeat center;
+}
+
+.friends-button--next {
+  background: url("image/buttons_icon/button_next.svg") no-repeat center;
+}
+
+.friends-button--double-next {
+  background: url("image/buttons_icon/button_double-next.svg") no-repeat center;
 }
