@@ -1,0 +1,44 @@
+.wrapper__section {
+  width: 1200px;
+  margin: auto;
+}
+
+.navigation__section {
+  background: var(--button-secondary-color);
+  padding: 30px 0;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-title {
+  margin: 0;
+  font-family: 'Gelasio';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+}
+
+.header__logo-subtitle {
+  margin-top: 10px;
+  padding-left: 4px;
+  font-family: 'Arimo';
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: var(--text-color);
+}
+
+.header__links-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+  margin: 0;
+}
