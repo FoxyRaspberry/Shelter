@@ -80,6 +80,10 @@
   cursor: pointer;
 }
 
+.friends__animal-card:hover {
+  background: var(--button-secondary-color);
+}
+
 .friends__animal-photo {
   display: block;
   border-radius: 9px 9px 0px 0px;
