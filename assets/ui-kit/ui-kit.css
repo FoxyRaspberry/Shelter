@@ -120,7 +120,7 @@
 }
 
 .shelter-button--paginator:hover {
-  background: var(--button-hover-color);
+  background-color: var(--button-hover-color);
   border-radius: 100px;
   border: 2px solid var(--button-hover-color);
 }
