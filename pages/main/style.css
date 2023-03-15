@@ -110,6 +110,14 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .cozy-house-story__content-section {
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+}
+
 .cozy-house-story__pets-image {
   display: block;
 }
