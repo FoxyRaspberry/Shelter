@@ -3,9 +3,22 @@
   margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper__section {
+    width: 708px;
+    margin: auto;
+  }
+}
+
 .cover__section {
   background-image: url('images/noise_transparent@2x.svg'), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%, rgb(33, 31, 32));
   padding-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .cover__section {
+    padding-top: 30px;
+  }
 }
 
 .header__section {
@@ -48,12 +61,31 @@
   background: url(images/start_screen_puppy.svg) right bottom no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  .slogan__content-section {
+    height: 1015px;
+    background-size: 569px 593px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slogan__content-container {
+    padding: 0 124px;
+  }
+}
+
 .slogan__text-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 42px;
   padding-top: 163px;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan__text-container {
+    padding-top: 0;
+  }
 }
 
 .slogan__header-color {
