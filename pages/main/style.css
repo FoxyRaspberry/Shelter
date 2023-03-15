@@ -95,6 +95,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .slogan-button-adaptive {
+    align-self: center;
+  }
+}
+
 .slogan__header-color {
   color: var(--button-secondary-color);
   margin: 0;
