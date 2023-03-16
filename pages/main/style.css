@@ -331,12 +331,25 @@
   gap: 55px 120px;
 }
 
+
+@media screen and (max-width: 768px) {
+  .help__icon-container {
+    gap: 55px 60px;
+  }
+}
+
 .help__icon-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .help__icon-list {
+    width: 170px;
+  }
 }
 
 .help__icon-image {
