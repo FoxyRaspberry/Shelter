@@ -311,6 +311,12 @@
   padding: 80px 0 100px;
 }
 
+@media screen and (max-width: 320px) {
+  .help__section {
+    padding: 42px 0;
+  }
+}
+
 .help__content-container {
   display: flex;
   flex-direction: column;
@@ -318,9 +324,21 @@
   gap: 60px;
 }
 
+@media screen and (max-width: 320px) {
+  .help__content-container {
+    gap: 42px;
+  }
+}
+
 .help__header {
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  .help__header {
+    font-size: 25px;
+  }
 }
 
 .help__icon-container {
@@ -338,6 +356,14 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .help__icon-container  {
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
 .help__icon-list {
   display: flex;
   flex-direction: column;
@@ -352,12 +378,25 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .help__icon-list {
+    width: 130px;
+    row-gap: 20px;
+  }
+}
+
 .help__icon-image {
   width: 60px;
 }
 
 .help__icon-name {
   margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .help__icon-name {
+    font-size: 15px;
+  }
 }
 
 .donation__section {
