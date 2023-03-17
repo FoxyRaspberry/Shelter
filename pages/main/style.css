@@ -57,7 +57,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 35px;
   margin: 0;
 }
@@ -280,7 +280,7 @@
 
 .pets__animal-photo {
   display: block;
-  border-radius: 9px 9px 0px 0px;
+  border-radius: 9px 9px 0 0;
 }
 
 .pets__animal-name {
@@ -532,6 +532,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__content-container {
+    gap: 40px;
+  }
+}
+
 .footer__wrapper-content {
   display: flex;
   gap: 160px;
@@ -539,7 +545,6 @@
 
 @media screen and (max-width: 1279px) {
   .footer__wrapper-content {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
@@ -547,8 +552,16 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__wrapper-content {
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
+  }
+}
+
 .footer__contacts-container {
-  width: 298px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -558,12 +571,36 @@
 @media screen and (max-width: 1279px) {
   .footer__contacts-container {
     margin-top: 0;
+    width: 285px;
   }
 }
 
-.footer__header {
+@media screen and (max-width: 767px) {
+  .footer__contacts-container {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.footer__header,
+.footer__header-local {
   margin: 0;
   color: var(--button-secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer__header,
+  .footer__header-local {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__header-local {
+    width: 275px;
+    text-align: center;
+    align-self: center;
+  }
 }
 
 .footer__mail-container,
@@ -573,6 +610,13 @@
   display: flex;
   gap: 20px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__mail-container,
+  .footer__phone-container {
+    justify-content: center;
+  }
 }
 
 .footer__mail-image,
@@ -586,6 +630,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__puppy-image {
+    width: 260px;
+  }
+}
+
 .footer__contact-text {
   margin: 0;
   align-self: center;
@@ -593,15 +643,22 @@
 }
 
 .footer__location-container {
+  width: 305px;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 33px;
   margin-top: 16px;
 }
 
 @media screen and (max-width: 1279px) {
   .footer__location-container {
     margin-top: 0;
-    gap: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__location-container {
+    margin: auto;
+    gap: 40px;
   }
 }
