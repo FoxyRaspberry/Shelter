@@ -404,6 +404,12 @@
   padding: 80px 0 100px;
 }
 
+@media screen and (max-width: 320px) {
+  .donation__section {
+    padding: 42px 0;
+  }
+}
+
 .donation__content-container {
   display: flex;
   justify-content: center;
@@ -411,9 +417,34 @@
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .donation__content-container {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .donation__content-container {
+    gap: 42px;
+  }
+}
+
 .donation__image,
 .donation__card-number {
   display: block;
+}
+
+@media screen and (max-width: 320px) {
+  .donation__image {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .donation__card-number {
+    width: 281px;
+  }
 }
 
 .donation__text-container {
@@ -423,12 +454,41 @@
   gap: 20px;
 }
 
-.donation__header {
+@media screen and (max-width: 320px) {
+  .donation__text-container {
+    width: 300px;
+  }
+}
+
+.donation__header-three,
+.donation__header-five {
   margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .donation__header-three {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .donation__header-five {
+    align-self: center;
+    width: 273px;
+    letter-spacing: normal;
+  }
 }
 
 .donation__card-number-link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .donation__card-number-link {
+    margin: auto;
+  }
 }
 
 .donation__legal-information {
@@ -438,6 +498,14 @@
   font-size: 12px;
   line-height: 18px;
   color: var(--paragraph-s-color);
+}
+
+@media screen and (max-width: 320px) {
+  .donation__legal-information {
+    margin: auto;
+    width: 280px;
+    text-align: justify;
+  }
 }
 
 .footer__section {
