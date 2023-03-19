@@ -34,6 +34,14 @@
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header__section {
+    gap: 43px;
+    justify-content: flex-start;
+    margin-right: 40px;
+  }
+}
+
 .header__logo-title {
   margin: 0;
   font-family: 'Gelasio';
@@ -53,6 +61,27 @@
   color: var(--button-secondary-color);
 }
 
+.header__burger-label {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger-label {
+    display: table;
+  }
+
+  .header__burger-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("images/burger.svg") no-repeat center;
+  }
+
+  .header__burger-checkbox:checked ~ .header__burger-label .header__burger-button {
+    transform: rotate(90deg);
+  }
+}
+
 .header__links-list {
   list-style-type: none;
   display: flex;
@@ -60,6 +89,31 @@
   padding: 0;
   gap: 35px;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header__links-list {
+    display: none;
+  }
+
+  .header__burger-checkbox:checked ~ .header__links-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 320px;
+    background: #292929;
+  }
+
+  .header__links-text {
+    font-size: 32px;
+    color: var(--active-link-color);
+  }
 }
 
 .slogan__content-section {
@@ -75,9 +129,22 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .slogan__content-section {
+    height: 673px;
+    background-size: 260px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .slogan__content-container {
     padding: 0 124px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slogan__content-container {
+    padding: 0;
   }
 }
 
@@ -106,9 +173,25 @@
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .slogan__header-color {
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+  }
+}
+
 .slogan__paragraph-color {
   color: var(--button-disabled-border-color);
   margin: 0;
+  width: 460px;
+}
+
+@media screen and (max-width: 767px) {
+  .slogan__paragraph-color {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .cozy-house-story__section {
