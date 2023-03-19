@@ -82,6 +82,23 @@
   }
 }
 
+.header__navigation-blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: var(--background-color-dark);
+  opacity: .6;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger-checkbox:checked ~ .header__navigation-blackout {
+    display: block;
+  }
+}
+
 .header__links-list {
   list-style-type: none;
   display: flex;
@@ -107,7 +124,7 @@
     align-items: center;
     gap: 40px;
     width: 320px;
-    background: #292929;
+    background: var(--background-color-dark);
   }
 
   .header__links-text {
@@ -440,7 +457,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .help__icon-container  {
+  .help__icon-container {
     gap: 30px;
     justify-content: space-between;
     text-align: center;

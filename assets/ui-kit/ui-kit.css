@@ -1,15 +1,18 @@
 :root {
+  --color-dark: #292929;
+
   --button-height: 52px;
   --button-background-color: #f1cdb3;
   --button-hover-color: #fddcc4;
   --button-secondary-color: #ffffff;
   --button-disabled-border-color: #cdcdcd;
-  --text-color: #292929;
+  --text-color: var(--color-dark);
   --header-color: #545454;
   --paragraph-l-color: #4c4c4c;
   --paragraph-s-color: #b2b2b2;
   --active-link-color: #fafafa;
   --background-section: #f6f6f6;
+  --background-color-dark: var(--color-dark);
 }
 
 .shelter-button--primary {
