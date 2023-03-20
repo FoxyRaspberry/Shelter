@@ -166,10 +166,22 @@
   padding: 80px 0 100px;
 }
 
+@media screen and (max-width: 1279px) {
+  .friends__section {
+    padding: 80px 0 70px;
+  }
+}
+
 .friends__content-container {
   display: flex;
   flex-direction: column;
   gap: 45px;
+}
+
+@media screen and (max-width: 1279px) {
+  .friends__content-container {
+    gap: 30px;
+  }
 }
 
 .friends__header {
@@ -184,6 +196,16 @@
   row-gap: 30px;
   column-gap: 40px;
   padding: 15px 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .friends__animal-container {
+    width: 580px;
+    height: 1365px;
+    padding: 0;
+    margin: auto;
+    overflow-y: hidden;
+  }
 }
 
 .friends__animal-card {
@@ -227,6 +249,14 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+@media screen and (max-width: 1279px) {
+  .friends__buttons-container {
+    width: 340px;
+    margin: auto;
+    padding-top: 10px;
+  }
 }
 
 .friends__button--double-back {
