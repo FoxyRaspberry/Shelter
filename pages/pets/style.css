@@ -172,6 +172,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .friends__section {
+    padding: 42px 0;
+  }
+}
+
 .friends__content-container {
   display: flex;
   flex-direction: column;
@@ -184,9 +190,21 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .friends__content-container {
+    gap: 42px;
+  }
+}
+
 .friends__header {
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .friends__header {
+    font-size: 25px;
+  }
 }
 
 .friends__animal-container {
@@ -205,6 +223,12 @@
     padding: 0;
     margin: auto;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .friends__animal-container {
+    width: 270px;
   }
 }
 
@@ -256,6 +280,14 @@
     width: 340px;
     margin: auto;
     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .friends__buttons-container {
+    width: 300px;
+    padding: 0;
+    gap: 10px;
   }
 }
 
