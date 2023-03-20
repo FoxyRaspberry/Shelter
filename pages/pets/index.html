@@ -21,20 +21,36 @@
           <div class="header__logo-subtitle">Shelter for pets in Boston</div>
         </a>
         <nav>
-          <ul class="header__links-list">
-            <li>
-              <a class="shelter-link-light-bg" href="../main/index.html">About the shelter</a>
-            </li>
-            <li>
-              <a class="shelter-link-light-bg" href="../pets/index.html">Our pets</a>
-            </li>
-            <li>
-              <a class="shelter-link-light-bg" href="../main/index.html#Help-the-shelter">Help the shelter</a>
-            </li>
-            <li>
-              <a class="shelter-link-light-bg" href="../pets/index.html#Contacts">Contacts</a>
-            </li>
-          </ul>
+          <input id="burger-checkbox" class="header__burger-checkbox" hidden type="checkbox">
+          <label class="header__burger-label" for="burger-checkbox">
+            <span class="header__burger-button"></span>
+          </label>
+          <label class="header__navigation-blackout" for="burger-checkbox"></label>
+          <div class="header__navigation-container">
+            <div class="header__navigation-header">
+              <div>
+                <div class="header__logo-title">Cozy House</div>
+                <div class="header__logo-subtitle">Shelter for pets in Boston</div>
+              </div>
+              <label class="header__burger-label" for="burger-checkbox">
+                <span class="header__burger-button"></span>
+              </label>
+            </div>
+            <ul class="header__links-list">
+              <li>
+                <a class="shelter-link-light-bg header__links-text" href="../main/index.html">About the shelter</a>
+              </li>
+              <li>
+                <a class="shelter-link-light-bg header__links-text" href="../pets/index.html">Our pets</a>
+              </li>
+              <li>
+                <a class="shelter-link-light-bg header__links-text" href="../main/index.html#Help-the-shelter">Help the shelter</a>
+              </li>
+              <li>
+                <a class="shelter-link-light-bg header__links-text" href="../pets/index.html#Contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
     </div>

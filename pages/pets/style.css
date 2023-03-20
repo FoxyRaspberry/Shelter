@@ -34,6 +34,13 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header__section {
+    gap: 43px;
+    justify-content: flex-start;
+  }
+}
+
 .header__link-logo {
   text-decoration: none;
 }
@@ -58,6 +65,80 @@
   color: var(--text-color);
 }
 
+.header__burger-label {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger-label {
+    display: table;
+  }
+
+  .header__burger-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("image/burger.svg") no-repeat center;
+  }
+
+  .header__burger-checkbox:checked ~ .header__burger-label .header__burger-button {
+    transform: rotate(90deg);
+  }
+}
+
+.header__navigation-blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: var(--background-color-dark);
+  opacity: .6;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger-checkbox:checked ~ .header__navigation-blackout {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    row-gap: 158px;
+    padding: 30px 10px;
+    width: 320px;
+    background: var(--background-color-dark);
+  }
+
+  .header__burger-checkbox:checked ~ .header__navigation-container {
+    display: flex;
+  }
+}
+
+.header__navigation-header {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation-header {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+  }
+
+  .header__navigation-header .header__burger-button {
+    transform: rotate(90deg);
+  }
+}
+
 .header__links-list {
   list-style-type: none;
   display: flex;
@@ -65,6 +146,19 @@
   padding: 0px;
   gap: 35px;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header__links-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .header__links-text {
+    font-size: 32px;
+    color: var(--active-link-color);
+  }
 }
 
 .friends__section {
