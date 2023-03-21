@@ -136,6 +136,15 @@
 
   .header__navigation-header .header__burger-button {
     transform: rotate(90deg);
+    background: url("image/burger-color-light.svg") no-repeat center;
+  }
+
+  .header__navigation-header .header__logo-title{
+    color: var(--button-background-color);
+  }
+
+  .header__navigation-header .header__logo-subtitle{
+    color: var(--button-secondary-color);
   }
 }
 
