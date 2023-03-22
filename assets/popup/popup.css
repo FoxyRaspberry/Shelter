@@ -1,0 +1,73 @@
+body {
+  background: rgba(41, 41, 41, 0.6);
+}
+
+.shelter-popup__container {
+  width: 952px;
+  height: 552px;
+}
+
+.shelter-popup__button-close {
+  position: absolute;
+  left: 890px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.shelter-popup__pet-card {
+  display: flex;
+  gap: 29px;
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  left: 0px;
+  top: 52px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+
+.shelter-popup__pet-card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.shelter-popup__pet-image {
+  display: block;
+}
+
+.shelter-popup__pet-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 20px 88px 0;
+}
+
+.shelter-popup__pet-name {
+  margin: 0 0 10px 0;
+  color: #000000;
+}
+
+.shelter-popup__pet-breed {
+  margin: 0 0 40px 0;
+  color: #000000;
+}
+
+.shelter-popup__pet-history {
+  margin: 0 0 40px 0;
+  color: #000000;
+}
+
+.shelter-popup__pet-characteristics-list {
+  margin: 0;
+  padding-left: 11px;
+  color: #000000;
+}
+
+li::marker {
+  color: #F1CDB3;
+  width: 4px;
+  height: 4px;
+}
+
+.shelter-popup__pet-characteristics {
+  color: #000000;
+}
