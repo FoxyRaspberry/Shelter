@@ -7,11 +7,37 @@ body {
   height: 552px;
 }
 
+@media screen and (max-width: 1279px) {
+  .shelter-popup__container {
+    width: 682px;
+    height: 402px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__container {
+    width: 270px;
+    height: 393px;
+  }
+}
+
 .shelter-popup__button-close {
   position: absolute;
   left: 890px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1279px) {
+  .shelter-popup__button-close {
+    left: 641px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__button-close {
+    left: 218px;
+  }
 }
 
 .shelter-popup__pet-card {
@@ -26,6 +52,20 @@ body {
   border-radius: 9px;
 }
 
+@media screen and (max-width: 1279px) {
+  .shelter-popup__pet-card {
+    width: 650px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__pet-card {
+    width: 240px;
+    height: 341px;
+  }
+}
+
 .shelter-popup__pet-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
@@ -34,11 +74,30 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .shelter-popup__pet-image {
+    display: none;
+  }
+}
+
 .shelter-popup__pet-description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 50px 20px 88px 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .shelter-popup__pet-description {
+    margin: 10px 9px 37px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__pet-description {
+    margin: 10px;
+    align-items: center;
+  }
 }
 
 .shelter-popup__pet-name {
@@ -51,15 +110,41 @@ body {
   color: #000000;
 }
 
+@media screen and (max-width: 1279px) {
+  .shelter-popup__pet-breed {
+    margin-bottom: 20px;
+  }
+}
+
 .shelter-popup__pet-history {
   margin: 0 0 40px 0;
   color: #000000;
 }
 
+@media screen and (max-width: 1279px) {
+  .shelter-popup__pet-history {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__pet-history {
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+}
+
 .shelter-popup__pet-characteristics-list {
   margin: 0;
-  padding-left: 11px;
+  padding-left: 15px;
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__pet-characteristics-list {
+    align-self: flex-start;
+  }
 }
 
 li::marker {
