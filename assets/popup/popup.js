@@ -1,4 +1,5 @@
-// Global function.
+// Global functions.
+
 function createContent({ breed, name, type, history, age, inoculations, diseases, parasites, img }) {
   const element = document.createElement('div');
   element.classList.add('shelter-popup__pet-card');
@@ -17,4 +18,66 @@ function createContent({ breed, name, type, history, age, inoculations, diseases
     </div>
   `;
   return element;
+}
+
+function createPopup() {
+  const sectionElement = document.createElement('section');
+  sectionElement.classList.add('shelter-popup__section');
+
+  const containerElement = document.createElement('div');
+  containerElement.classList.add('shelter-popup__container');
+
+  const closeElement = document.createElement('button');
+  closeElement.classList.add('shelter-close-button', 'shelter-popup__button-close');
+  closeElement.innerHTML = '&times;';
+
+  containerElement.appendChild(closeElement);
+  sectionElement.appendChild(containerElement);
+
+  return {
+    closeElement,
+    containerElement,
+    sectionElement,
+  };
+}
+
+function openPopup(contentElement) {
+  switchBodyScrollable(true);
+  const blackoutElement = createBlackout();
+  document.body.appendChild(blackoutElement);
+  const {
+    closeElement,
+    containerElement,
+    sectionElement,
+  } = createPopup();
+  containerElement.appendChild(contentElement);
+  document.body.appendChild(sectionElement);
+
+  const handleClick = (pointerEvent) => {
+    if (pointerEvent.target !== sectionElement && pointerEvent.target !== closeElement) return;
+    closePopup(blackoutElement, sectionElement);
+    sectionElement.removeEventListener('click', handleClick);
+  };
+
+  sectionElement.addEventListener('click', handleClick);
+}
+
+function createBlackout() {
+  const element = document.createElement('div');
+  element.classList.add('shelter-popup__blackout');
+  return element;
+}
+
+function switchBodyScrollable(fixed) {
+  if (fixed) {
+    document.body.classList.add('shelter-popup--fix-scroll');
+  } else {
+    document.body.classList.remove('shelter-popup--fix-scroll');
+  }
+}
+
+function closePopup(blackoutElement, popupElement) {
+  switchBodyScrollable(false);
+  blackoutElement.remove();
+  popupElement.remove();
 }
