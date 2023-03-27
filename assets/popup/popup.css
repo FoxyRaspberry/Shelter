@@ -1,53 +1,43 @@
-body {
+.shelter-popup--fix-scroll {
+  overflow: hidden;
+}
+
+.shelter-popup__blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(41, 41, 41, 0.6);
 }
 
+.shelter-popup__section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
 .shelter-popup__container {
-  width: 952px;
-  height: 552px;
-}
-
-@media screen and (max-width: 1279px) {
-  .shelter-popup__container {
-    width: 682px;
-    height: 402px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .shelter-popup__container {
-    width: 270px;
-    height: 393px;
-  }
+  position: relative;
+  margin: auto;
+  padding: 52px 30px;
 }
 
 .shelter-popup__button-close {
   position: absolute;
-  left: 890px;
-  top: 0px;
+  top: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0);
-}
-
-@media screen and (max-width: 1279px) {
-  .shelter-popup__button-close {
-    left: 641px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .shelter-popup__button-close {
-    left: 218px;
-  }
 }
 
 .shelter-popup__pet-card {
   display: flex;
   gap: 29px;
-  position: absolute;
   width: 900px;
   height: 500px;
-  left: 0px;
-  top: 52px;
   background: #FAFAFA;
   border-radius: 9px;
 }
