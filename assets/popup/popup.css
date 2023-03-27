@@ -147,7 +147,7 @@ body {
   }
 }
 
-li::marker {
+.shelter-popup__pet-characteristics::marker {
   color: #F1CDB3;
   width: 4px;
   height: 4px;
