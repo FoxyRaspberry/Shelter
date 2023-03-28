@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   cardsContainerElement.innerHTML = '';
   pets.forEach(pet => {
     const petCard = createPetCard(pet);
+    petCard.addEventListener('click', (pointerEvent) => {
+      // Создаем информационную карточку питомца и показываем попап с ней.
+      const petPopupContent = createContent(pet);
+      openPopup(petPopupContent);
+    });
     cardsContainerElement.appendChild(petCard);
   });
 });
