@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  function getPageWidth() {
+    const element = document.createElement('div');
+
+    element.style.overflowY = 'scroll';
+    element.style.width = '50px';
+    element.style.height = '50px';
+
+    // Вставить элемент в документ, иначе размеры будут равны 0.
+    document.body.appendChild(element);
+    const scrollWidth = element.offsetWidth - element.clientWidth;
+
+    element.remove();
+
+    return document.body.clientWidth + scrollWidth;
+  }
+
   function createPetCard({ img, name }) {
     const element = document.createElement('div');
     element.classList.add('friends__animal-card');
@@ -25,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Вычислить количество карточек на странице,
   // опираясь на ширину вкладки браузера.
   function getCountCardsOnPage() {
-    return document.body.clientWidth < 768 ? 3 : document.body.clientWidth < 1280 ? 6 : 8;
+    const pageWidth = getPageWidth();
+    return pageWidth < 768 ? 3 : pageWidth < 1280 ? 6 : 8;
   }
 
   function getPagesMap(pets, countCardsOnPage) {
@@ -70,16 +87,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Получаем ссылку на контейнер с карточками, удаляем карточки из HTML, используя массив питомцев,
   // создаем карточки и добавляем их в контейнер.
   const cardsContainerElement = document.getElementsByClassName('friends__animal-container')[0];
-  cardsContainerElement.innerHTML = '';
-  pets.forEach(pet => {
-    const petCard = createPetCard(pet);
-    petCard.addEventListener('click', (pointerEvent) => {
-      // Создаем информационную карточку питомца и показываем попап с ней.
-      const petPopupContent = createContent(pet);
-      openPopup(petPopupContent);
+  function displayCards(pets, cardsContainerElement) {
+    cardsContainerElement.innerHTML = '';
+    pets.forEach(pet => {
+      const petCard = createPetCard(pet);
+      petCard.addEventListener('click', (pointerEvent) => {
+        // Создаем информационную карточку питомца и показываем попап с ней.
+        const petPopupContent = createContent(pet);
+        openPopup(petPopupContent);
+      });
+      cardsContainerElement.appendChild(petCard);
     });
-    cardsContainerElement.appendChild(petCard);
-  });
+  }
+
+  displayCards(pets, cardsContainerElement);
 
   const countCardsOnPage = getCountCardsOnPage();
 
