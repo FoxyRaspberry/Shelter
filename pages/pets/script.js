@@ -100,9 +100,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  displayCards(pets, cardsContainerElement);
-
   const countCardsOnPage = getCountCardsOnPage();
-
   const pagesMap = getPagesMap(pets, countCardsOnPage);
+
+  const firstPageButtonElement = document.getElementsByClassName('friends__button--double-back')[0];
+  const previousPageButtonElement = document.getElementsByClassName('friends__button--back')[0];
+  const currentPageButtonElement = document.getElementsByClassName('friends__button--current')[0];
+  const nextPageButtonElement = document.getElementsByClassName('friends-button--next')[0];
+  const lastPageButtonElement = document.getElementsByClassName('friends-button--double-next')[0];
+
+  let currentPageNumber = 1;
+  displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
+
+  firstPageButtonElement.addEventListener('click', () => {
+    currentPageNumber = 1;
+    displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
+    currentPageButtonElement.innerText = currentPageNumber;
+    firstPageButtonElement.setAttribute('disabled', 'true');
+    previousPageButtonElement.setAttribute('disabled', 'true');
+    lastPageButtonElement.removeAttribute('disabled');
+    nextPageButtonElement.removeAttribute('disabled');
+  });
+
+  previousPageButtonElement.addEventListener('click', () => {
+    currentPageNumber--;
+    displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
+    currentPageButtonElement.innerText = currentPageNumber;
+    if (currentPageNumber === 1) {
+      previousPageButtonElement.setAttribute('disabled', 'true');
+      firstPageButtonElement.setAttribute('disabled', 'true');
+    }
+    nextPageButtonElement.removeAttribute('disabled');
+    lastPageButtonElement.removeAttribute('disabled');
+  });
+
+  nextPageButtonElement.addEventListener('click', () => {
+    currentPageNumber++;
+    displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
+    currentPageButtonElement.innerText = currentPageNumber;
+    if (currentPageNumber === pagesMap.size) {
+      nextPageButtonElement.setAttribute('disabled', 'true');
+      lastPageButtonElement.setAttribute('disabled', 'true');
+    }
+    previousPageButtonElement.removeAttribute('disabled');
+    firstPageButtonElement.removeAttribute('disabled');
+  });
+
+  lastPageButtonElement.addEventListener('click', () => {
+    currentPageNumber = pagesMap.size;
+    displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
+    currentPageButtonElement.innerText = currentPageNumber;
+    lastPageButtonElement.setAttribute('disabled', 'true');
+    nextPageButtonElement.setAttribute('disabled', 'true');
+    previousPageButtonElement.removeAttribute('disabled');
+    firstPageButtonElement.removeAttribute('disabled');
+  });
 });
