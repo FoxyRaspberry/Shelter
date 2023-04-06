@@ -301,20 +301,43 @@
   }
 }
 
-.friends__button--double-back {
-  background: url("image/buttons_icon/button_double-back.svg") no-repeat center;
+.pagination__button {
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.friends__button--back {
-  background: url("image/buttons_icon/button_back.svg") no-repeat center;
+.pagination__button--first-page {
+  background-image: url('image/pagination-icons/double-button.svg');
 }
 
-.friends-button--next {
-  background: url("image/buttons_icon/button_next.svg") no-repeat center;
+.pagination__button--first-page[disabled] {
+  background-image: url('image/pagination-icons/double-button-disabled.svg');
 }
 
-.friends-button--double-next {
-  background: url("image/buttons_icon/button_double-next.svg") no-repeat center;
+.pagination__button--previous-page {
+  background-image: url('image/pagination-icons/button.svg');
+}
+
+.pagination__button--previous-page[disabled] {
+  background-image: url('image/pagination-icons/button-disabled.svg');
+}
+
+.pagination__button--next-page {
+  background-image: url('image/pagination-icons/button.svg');
+  transform: rotate(180deg);
+}
+
+.pagination__button--next-page[disabled] {
+  background-image: url('image/pagination-icons/button-disabled.svg');
+}
+
+.pagination__button--last-page {
+  background-image: url('image/pagination-icons/double-button.svg');
+  transform: rotate(180deg);
+}
+
+.pagination__button--last-page[disabled] {
+  background-image: url('image/pagination-icons/double-button-disabled.svg');
 }
 
 .footer__section {
