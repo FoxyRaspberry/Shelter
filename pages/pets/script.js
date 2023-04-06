@@ -103,11 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const countCardsOnPage = getCountCardsOnPage();
   const pagesMap = getPagesMap(pets, countCardsOnPage);
 
-  const firstPageButtonElement = document.getElementsByClassName('friends__button--double-back')[0];
-  const previousPageButtonElement = document.getElementsByClassName('friends__button--back')[0];
-  const currentPageButtonElement = document.getElementsByClassName('friends__button--current')[0];
-  const nextPageButtonElement = document.getElementsByClassName('friends-button--next')[0];
-  const lastPageButtonElement = document.getElementsByClassName('friends-button--double-next')[0];
+  const [
+    firstPageButtonElement,
+    previousPageButtonElement,
+    currentPageButtonElement,
+    nextPageButtonElement,
+    lastPageButtonElement,
+  ] = document.getElementsByClassName('pagination__button');
 
   let currentPageNumber = 1;
   displayCards(pagesMap.get(currentPageNumber), cardsContainerElement);
