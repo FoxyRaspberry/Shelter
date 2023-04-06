@@ -112,7 +112,7 @@
   border: 2px solid var(--button-background-color);
   border-radius: 100px;
   cursor: pointer;
-  background: var(--button-secondary-color);
+  background: transparent;
 
   font-family: 'Gelasio';
   font-size: 20px;
