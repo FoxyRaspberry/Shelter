@@ -52,7 +52,10 @@
 @media screen and (max-width: 767px) {
   .shelter-popup__pet-card {
     width: 240px;
-    height: 341px;
+    min-height: 341px;
+    max-height: 500px;
+    height: auto;
+    overflow-y: auto;
   }
 }
 
@@ -62,6 +65,8 @@
 
 .shelter-popup__pet-image {
   display: block;
+  flex-shrink: 0;
+  border-radius: 9px 0px 0px 9px;
 }
 
 @media screen and (max-width: 767px) {
