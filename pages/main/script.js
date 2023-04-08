@@ -104,4 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nextSlideButtonElement = document.getElementsByClassName('pets__button-reversed-adaptive')[0];
   nextSlideButtonElement.addEventListener('click', shuffleAndShowCards);
+
+  // Burger-navigation: управлять полосой прокрутки, закрывать навигацию при выборе ссылки //
+  const burgerCheckboxElement = document.getElementById('burger-checkbox');
+  burgerCheckboxElement.addEventListener('change', (event) => {
+    switchBodyScrollable(!event.target.checked);
+  });
+
+  const linksListElement = document.getElementsByClassName('header__links-list')[0];
+  linksListElement.addEventListener('click', (pointerEvent) => {
+    if (pointerEvent.target.tagName === 'A') {
+      burgerCheckboxElement.checked = false;
+      switchBodyScrollable(true);
+    }
+  });
 });
