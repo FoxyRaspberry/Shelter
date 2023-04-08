@@ -798,5 +798,6 @@
   .footer__location-container {
     margin: auto;
     gap: 40px;
+    width: auto;
   }
 }
