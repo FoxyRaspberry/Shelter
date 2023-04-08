@@ -168,6 +168,10 @@
     font-size: 32px;
     color: var(--active-link-color);
   }
+  
+  .header__links-text:hover {
+    color: var(--active-link-color);
+  }
 }
 
 .friends__section {
