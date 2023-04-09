@@ -23,14 +23,19 @@
 .shelter-popup__container {
   position: relative;
   margin: auto;
-  padding: 52px 30px;
 }
 
 .shelter-popup__button-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -52px;
+  right: -42px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .shelter-popup__button-close {
+    right: -30px;
+  }
 }
 
 .shelter-popup__pet-card {
@@ -44,7 +49,8 @@
 
 @media screen and (max-width: 1279px) {
   .shelter-popup__pet-card {
-    width: 650px;
+    gap: 11px;
+    width: 630px;
     height: 350px;
   }
 }
@@ -131,6 +137,9 @@
 }
 
 .shelter-popup__pet-characteristics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin: 0;
   padding-left: 15px;
   color: #000000;
@@ -139,6 +148,7 @@
 @media screen and (max-width: 767px) {
   .shelter-popup__pet-characteristics-list {
     align-self: flex-start;
+    gap: 5px;
   }
 }
 
