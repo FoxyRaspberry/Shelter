@@ -42,7 +42,7 @@ function createPopup() {
 }
 
 function openPopup(contentElement) {
-  switchBodyScrollable(true);
+  switchBodyScrollable(false);
   const blackoutElement = createBlackout();
   document.body.appendChild(blackoutElement);
   const {
@@ -68,16 +68,16 @@ function createBlackout() {
   return element;
 }
 
-function switchBodyScrollable(fixed) {
-  if (fixed) {
-    document.body.classList.add('shelter-popup--fix-scroll');
-  } else {
+function switchBodyScrollable(scrollable) {
+  if (scrollable) {
     document.body.classList.remove('shelter-popup--fix-scroll');
+  } else {
+    document.body.classList.add('shelter-popup--fix-scroll');
   }
 }
 
 function closePopup(blackoutElement, popupElement) {
-  switchBodyScrollable(false);
+  switchBodyScrollable(true);
   blackoutElement.remove();
   popupElement.remove();
 }
