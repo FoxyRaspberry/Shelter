@@ -250,3 +250,7 @@
 .shelter-link-light-bg:hover {
   color: var(--text-color);
 }
+
+.shelter-link--active {
+  border-bottom: 3px solid var(--button-background-color);
+}
